@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script
+    src="https://kit.fontawesome.com/3bfd3ce9e5.js"
+    crossorigin="anonymous"
+  ></script>
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main style="margin-top: 100px;">
+        <div class="grid">
+
+            <div class="turn">
+                <i class="fa-solid fa-x turquoise"></i>
+                <p>player 1, you're up!</p>
+            </div>
+
+            <div class="menu">
+                <button class="menu-btn">
+                  Actions
+                  <i class="fa-solid fa-chevron-down"></i>
+                </button>
+
+                <div class="items border hidden">
+                  <button data-id="reset-btn">Reset</button>
+                  <button data-id="new-round-btn">New Round</button>
+                </div>
+              </div>
+
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+            <div class="square"></div>
+             
+            <!-- score board -->
+            <div class="score shadow" style="background-color: var(--turquoise)">
+                <p>Player 1</p>
+                <span data-id="p1-wins">0 Wins</span>
+              </div>
+              <div class="score shadow" style="background-color: var(--light-gray)">
+                <p>Ties</p>
+                <span data-id="ties">0</span>
+              </div>
+              <div class="score shadow" style="background-color: var(--yellow)">
+                <p>Player 2</p>
+                <span >0 Wins</span>
+              </div>
+        </div>
+    </main>
+
+    <footer>
+        <p> 
+            orginal project by
+            <a href="https://www.instagram.com/azizbek.islomboyev_07/"> @Islomboyev</a> va
+            <a href="https://t.me/prouzbmaster">prouzbmaster</a>
+        </p>
+        <p> 
+            Refectored by
+            <a href="t.me/code_infenity (https://t.me/code_infenity)" style="color: var(--turquoise);">code-infinity</a>
+        </p>
+    </footer>]
+    <div class="modal hidden">
+       <div class="modal-contents">
+        <p data-id="modal-text">Player 1 wins!</p>
+        <button data-id="modal-btn">Play again</button>
+      </div>
+    </div>
+</body>
+</html>
